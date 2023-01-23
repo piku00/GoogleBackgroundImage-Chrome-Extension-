@@ -1,5 +1,4 @@
 {
-    "manifest_version" : 2,
     "name": "Google.com background image",
     "version": "0.0.1",
     "manifest_version": 2,
@@ -13,6 +12,6 @@
     "permissions": ["storage","activeTab"],
     "content_scripts":{
         "matches": ["https://www.google.com/*"],
-        "css": ["background.css"]
+        "js": ["background.js"]
     }
 }
