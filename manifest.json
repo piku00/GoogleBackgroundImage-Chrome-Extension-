@@ -1,0 +1,17 @@
+{
+    "name": "Google.com background image",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "browser_action":{
+        "default_popup": "popup.html",
+        "default-icon": "logo.png"
+    },
+    "icon":{
+        "128": "logo.png"
+    },
+    "permissions": ["storage","activeTab"],
+    "content_scripts":{
+        "matches": ["https://www.google.com/*"],
+        "css": ["background.css"]
+    }
+}
